@@ -72,7 +72,8 @@
     '3': '<sup>3</sup>',
     '4': '<sup>4</sup>',
     '5': '<sup>5</sup>',
-    '6': '<sup>6</sup>'
+    '6': '<sup>6</sup>',
+    '': ''
   }
   var parse_jyutping = function (jp) {
     var parts = ['', '', ''];
@@ -85,12 +86,14 @@
         break;
       }
     }
-    // final: rest of string except last character
+    var final_len = jp.length - offset;
+    // if last character is valid tone, take it
+    if (/^[1-6]$/.test(jp[jp.length-1])) {
+      parts[2] = jp[jp.length-1];
+      final_len -= 1;
+    }
     // FIXME: check whether final is valid
-    parts[1] = jp.substr(offset, jp.length-offset-1);
-    // tone: last character
-    // FIXME: make tone optional
-    parts[2] = jp[jp.length-1];
+    parts[1] = jp.substr(offset, final_len);
     return parts;
   };
   libcantonese.parse_jyutping = parse_jyutping;
