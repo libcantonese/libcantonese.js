@@ -1,11 +1,7 @@
 (function(){
   var libcantonese = {}
-  // learned from underscore.js
-  if (typeof exports !== 'undefined') {
-    if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = libcantonese;
-    }
-    exports.libcantonese = libcantonese;
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = libcantonese;
   } else {
     this.libcantonese = libcantonese;
   }

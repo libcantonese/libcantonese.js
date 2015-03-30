@@ -1,0 +1,22 @@
+{
+  "name": "libcantonese",
+  "version": "0.0.1",
+  "description": "Cantonese phonetic utility library",
+  "main": "libcantonese.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/libcantonese/libcantonese.js.git"
+  },
+  "keywords": [
+    "cantonese"
+  ],
+  "author": "Hill Ma <hill.ma@yahoo.com> (http://mahiuchun.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/libcantonese/libcantonese.js/issues"
+  },
+  "homepage": "https://github.com/libcantonese/libcantonese.js"
+}
