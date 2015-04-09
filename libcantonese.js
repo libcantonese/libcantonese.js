@@ -6,11 +6,11 @@
     this.libcantonese = libcantonese;
   }
   var jyutping_onsets = [
+    'ng', 'gw', 'kw',
     'b', 'p', 'm', 'f',
     'd', 't', 'n', 'l',
-    'g', 'k', 'h', 'ng',
-    'z', 'c', 's', 'gw',
-    'kw', 'j', 'w'
+    'g', 'k', 'h', 'z',
+    'c', 's', 'j', 'w'
   ];
   var jyutping_to_yale_onset = {
     'z': 'j',
