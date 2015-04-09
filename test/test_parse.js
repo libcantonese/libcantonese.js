@@ -1,29 +1,29 @@
 var assert = require("assert")
-var libcantonese = require("libcantonese")
+var libcantonese = require("../libcantonese.js")
 describe('Parse', function(){
-  describe('#parse_jyutping()', function(){
+  describe('#parse_lshk()', function(){
     it('should parse all valid lshk correctly', function(){
       // aa
-      assert.deepEqual(libcantonese.parse_jyutping('aa'),  [''  ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('baa'), ['b' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('paa'), ['p' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('maa'), ['m' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('faa'), ['f' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('daa'), ['d' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('taa'), ['t' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('naa'), ['n' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('laa'), ['l' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('gaa'), ['g' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('kaa'), ['k' ,'aa', '']);
-      // assert.deepEqual(libcantonese.parse_jyutping('ngaa'),['ng','aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('haa'), ['h' ,'aa', '']);
-      // assert.deepEqual(libcantonese.parse_jyutping('gwaa'),['gw','aa', '']);
-      // assert.deepEqual(libcantonese.parse_jyutping('kwaa'),['kw','aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('waa'), ['w' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('zaa'), ['z' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('caa'), ['c' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('saa'), ['s' ,'aa', '']);
-      assert.deepEqual(libcantonese.parse_jyutping('jaa'), ['j' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('aa'),  [''  ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('baa'), ['b' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('paa'), ['p' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('maa'), ['m' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('faa'), ['f' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('daa'), ['d' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('taa'), ['t' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('naa'), ['n' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('laa'), ['l' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('gaa'), ['g' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('kaa'), ['k' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('ngaa'),['ng','aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('haa'), ['h' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('gwaa'),['gw','aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('kwaa'),['kw','aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('waa'), ['w' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('zaa'), ['z' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('caa'), ['c' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('saa'), ['s' ,'aa', '']);
+      assert.deepEqual(libcantonese.parse_lshk('jaa'), ['j' ,'aa', '']);
 
     })
   })
