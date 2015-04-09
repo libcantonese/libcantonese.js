@@ -71,7 +71,7 @@
     '6': '<sup>6</sup>',
     '': ''
   }
-  var parse_jyutping = function (jp) {
+  var parse_lshk = function (jp) {
     var parts = ['', '', ''];
     var offset = 0;
     // find onset and onset offset
@@ -92,9 +92,9 @@
     parts[1] = jp.substr(offset, final_len);
     return parts;
   };
-  libcantonese.parse_jyutping = parse_jyutping;
-  libcantonese.jyutping_to_yale = function (jp) {
-    var parts = parse_jyutping(jp);
+  libcantonese.parse_lshk = parse_lshk;
+  libcantonese.lshk_to_yale = function (jp) {
+    var parts = parse_lshk(jp);
     // map onset
     if (parts[0] in jyutping_to_yale_onset) {
       parts[0] = jyutping_to_yale_onset[parts[0]];
@@ -110,8 +110,8 @@
     // TODO: yale tone mark
     return parts.join('');
   }
-  libcantonese.jyutping_to_hked = function (jp) {
-    var parts = parse_jyutping(jp);
+  libcantonese.lshk_to_hked = function (jp) {
+    var parts = parse_lshk(jp);
     // map onset
     if (parts[0] in jyutping_to_hked_onset) {
       parts[0] = jyutping_to_hked_onset[parts[0]];
@@ -137,8 +137,8 @@
     }
     return parts.join('');
   }
-  libcantonese.jyutping_to_sidneylau = function (jp) {
-    var parts = parse_jyutping(jp);
+  libcantonese.lshk_to_slau = function (jp) {
+    var parts = parse_lshk(jp);
     if (parts[0] in jyutping_to_sidneylau_onset) {
       parts[0] = jyutping_to_sidneylau_onset[parts[0]];
     }
