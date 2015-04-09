@@ -1,6 +1,6 @@
 {
   "name": "libcantonese",
-  "version": "0.0.1",
+  "version": "0.0.2dev",
   "description": "Cantonese phonetic utility library",
   "main": "libcantonese.js",
   "scripts": {
