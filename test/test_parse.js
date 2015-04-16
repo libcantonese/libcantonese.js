@@ -24,7 +24,6 @@ describe('Parse', function(){
       assert.deepEqual(libcantonese.parse_lshk('caa'), ['c' ,'aa', '']);
       assert.deepEqual(libcantonese.parse_lshk('saa'), ['s' ,'aa', '']);
       assert.deepEqual(libcantonese.parse_lshk('jaa'), ['j' ,'aa', '']);
-
-    })
-  })
+    });
+  });
 })
